@@ -1,13 +1,11 @@
 # react-native-stripe-demo
-[![JavaScipt](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)]()
-[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
-[![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)]()
 
-## 🌟 How It Works
+
+## video demo
 
 ![React Native Stripe Demo](https://github.com/r4c3/react-native-stripe-demo/blob/main/demo.gif)
 
-## 🏃 Running Locally
+## how to run
 
 Using the terminal:
 
@@ -27,6 +25,7 @@ Using the terminal:
    $ npm i
    $ npm run dev
    ```
- 
-## 🤝 Contacts
-- [Race Williams](https://github.com/r4c3)
+  
+[![JavaScipt](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)]()
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
+[![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)]()
