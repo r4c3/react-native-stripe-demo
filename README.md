@@ -5,7 +5,7 @@
 
 ## 🌟 What is React Native Stripe Demo
 
-![React Native Stripe Demo](https://i.imgur.com/a/ET0GcuS.gif)
+![React Native Stripe Demo](https://imgur.com/a/ET0GcuS)
 
 ## 🏃 Running Locally
 
