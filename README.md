@@ -3,7 +3,7 @@
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
 [![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)]()
 
-## 🌟 What is React Native Stripe Demo
+## 🌟 How It Works
 
 ![React Native Stripe Demo](https://imgur.com/a/ET0GcuS)
 
