@@ -5,7 +5,7 @@
 
 ## 🌟 How It Works
 
-![React Native Stripe Demo](https://imgur.com/a/ET0GcuS)
+![React Native Stripe Demo](https://i.imgur.com/a/ET0GcuS.gif)
 
 ## 🏃 Running Locally
 
