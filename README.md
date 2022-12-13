@@ -1,5 +1,5 @@
 # React Native Stripe Demo
-An integration of Stripe payments into a barebones React Native application.
+###An integration of Stripe payments into a barebones React Native application.
 
 ![React Native Stripe Demo](https://github.com/r4c3/react-native-stripe-demo/blob/main/demo.gif)
 
