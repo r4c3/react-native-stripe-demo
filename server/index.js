@@ -27,5 +27,24 @@ app.post('/pay', async (req, res) => { //endpoint for Stripe payments
     }
 });
 
+app.post('/verify', async (req, res) => {
+    const signiture = req.header['stripe-signature'];
+    let event;
+    try {
+        event = await stripe.webhooks.constructEvent(req.body, signiture, process.env.STRIPE_WEBHOOK_KEY);
+        if (event.type === "payment_intent.created") {
+            console.log(`${event.data.object.metadata.name} initated payment!`);
+        }
+        if (event.type === "payment_intent.succeeded") {
+            console.log(`${event.data.object.metadata.name} succeeded payment!`);
+            // fulfill
+        }
+        res.json({ok: true});
+    } catch (error) {
+        console.error(error);
+        res.status(400).json({message: error.message});
+    }
+})
+
 const PORT = 3003;
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}.`));
