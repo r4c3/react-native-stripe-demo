@@ -1,0 +1,5 @@
+PORT=3003
+STRIPE_KEY=sk_test_ZHNmNTFNRUc3Q0ZzTDBhaWM1ZjFBZ2JqdEdURjZaWjNNN2ptTjVzbUVKRFdVQlpHcFNiT3UxcWxsUnhZbFpSa0MwWmp2bFZEWkN
+
+This files shows what your /server/.env file should look like.
+The STIPE_KEY above is just a random hash and is not associated with any Stripe account.

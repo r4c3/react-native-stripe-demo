@@ -1,17 +1,17 @@
 import { useStripe } from "@stripe/stripe-react-native";
-import React, { useState } from "react";
-import { View, Text, TextInput, Button, Alert } from "react-native";
+import React from "react";
+import { Pressable, Text, Alert, StyleSheet } from "react-native";
 
 const Payment = () => {
-  const [name, setName] = useState("");
   const stripe = useStripe();
+  const name = "7348014738"; //an imaginary username
 
   const subscribe = async () => {
     try {
       // sending request
       const response = await fetch("http://localhost:3003/pay", {
         method: "POST",
-        body: JSON.stringify({ name }),
+        body: JSON.stringify({name}),
         headers: {
           "Content-Type": "application/json",
         },
@@ -34,21 +34,29 @@ const Payment = () => {
     }
   };
 
+  const styles = StyleSheet.create({
+    button: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: 12,
+      paddingHorizontal: 2,
+      borderRadius: 4,
+      marginTop: 12,
+      backgroundColor: 'black',
+    },
+    text: {
+      fontSize: 18,
+      lineHeight: 21,
+      fontWeight: 'bold',
+      letterSpacing: 0.25,
+      color: 'white',
+    }
+  });
+
   return (
-    <View>
-      <TextInput
-        value={name}
-        onChangeText={(text) => setName(text)}
-        placeholder="input name here"
-        style={{
-          width: 300,
-          fontSize: 18,
-          padding: 8,
-          borderWidth: 2,
-        }}
-      />
-      <Button title="Purchase for $9.99" onPress={subscribe} />
-    </View>
+    <Pressable onPress={subscribe} style={styles.button}>
+      <Text style={styles.text}>Purchase ($9.99)</Text>
+    </Pressable>
   );
 };
 

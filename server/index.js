@@ -12,7 +12,6 @@ app.use(cors());
 app.post('/pay', async (req, res) => { //endpoint for Stripe payments
     try {
         const { name } = req.body;
-        if (!name) return res.status(400).json({ message: 'You must enter a name.' });
         const paymentIntent = await stripe.paymentIntents.create({
             amount: 999, //$9.99 USD
             currency: 'usd',
